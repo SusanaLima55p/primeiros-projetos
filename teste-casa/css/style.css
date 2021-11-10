@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --font-padrao:'Clicker Script', cursive;
+}
+
+body{
+    background-color: #e49e7b;
+}
+
+main{
+    background-color: white;
+    border-radius: 10px;
+    max-width: 800px;
+    min-width: 200px;
+    margin: 15% auto;
+    padding-bottom: 25px;
+}
+
+main h1{
+    font: normal 4em 'Clicker Script', cursive;
+    text-align: center;
+    padding: 20px 0px;
+
+}
+
+main p{
+    text-indent: 30px;
+    line-height: 30px;
+    font-size: 1.3em;
+    text-align: justify;
+    padding: 0px 20px;
+    padding-bottom: 10px;
+}
+
+main button{
+    display: block;
+    margin: 25px auto;
+    text-align: center;
+    padding: 25px;
+    font-size: 1.2em;
+}
+
+section{
+    display: none;
+    padding: 0px 20px;
+}
+
+section h2{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+main div{
+    display: block;
+    background-color: #e49e7b77;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px 10px ;
+}
