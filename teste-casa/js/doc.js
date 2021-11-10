@@ -1,15 +1,18 @@
 var botao = document.getElementById('bu')
 botao.addEventListener('click', inicio)
 var res = 0
+var int = document.getElementById('int')
 
-
-
+//passagem de pergunta
 function inicio(){
+    int.style.display = 'none'
     botao.style.display = 'none'
     var per1 = document.getElementById('per1')
     per1.style.display = 'block'
     var bper1 = document.getElementsByName('bper1')
-    var valor1 = ''
+    
+    
+    
 
 var prox = document.getElementById('prox')
 prox.addEventListener('click', proxima)
@@ -19,7 +22,6 @@ function proxima(){
     per1.style.display = 'none'
     per2.style.display = 'block'
     var bper2 = document.getElementsByName('bper2')
-    var valor2 = ''
 
 var prox2 = document.getElementById('prox2')
 prox2.addEventListener('click', proxima2)
@@ -60,6 +62,8 @@ function proxima5(){
 var ver = document.getElementById('ver')
 ver.addEventListener('click', verificar)
 
+
+    //contagem de ponto
     if (bper1[0].checked){
         res += 1
     } if (bper1[1].checked){
@@ -69,6 +73,7 @@ ver.addEventListener('click', verificar)
     } if (bper1[3].checked){
         res += 4
     }
+
 
     if (bper2[0].checked){
         res += 1
@@ -119,33 +124,33 @@ ver.addEventListener('click', verificar)
     } else if (bper6[3].checked){
         res += 2
     }
-
+    
 function verificar(){
     per6.style.display = 'none'
     var casa = document.getElementById('casa')
-    var img = document.createElement('img')
+    var img = document.getElementById('emb')
 
     if (res >= 0  && res < 10){
-        casa.innerHTML = `Parabéns você foi selecionado para a casa <mark id="gri">Grifinória!${res}</mark>`
+        casa.innerHTML = `Parabéns você foi selecionado para a casa <mark id="gri">Grifinória!</mark>`
         document.body.style.background = '#770203'
-        img.setAttribute('src', 'imagens/bebe-f.png')
+        img.src = 'imagens/gri.png'
 
     } else if (res >= 10  && res < 14){
-        casa.innerHTML = `Parabéns você foi selecionado para a casa <mark id="cor">Corvinal!${res}</mark>`
+        casa.innerHTML = `Parabéns você foi selecionado para a casa <mark id="cor">Corvinal!</mark>`
         document.body.style.background = '#052e50'
-        img.setAttribute('src', 'imagens/bebe-f.png')
+        img.src = 'imagens/cor.png'
 
 
     } else if (res >=14  && res < 19){  
-        casa.innerHTML = `Parabéns você foi selecionado para a casa <mark id="luf">Lufa-Lufa!${res}</mark>`
+        casa.innerHTML = `Parabéns você foi selecionado para a casa <mark id="luf">Lufa-Lufa!</mark>`
         document.body.style.background = '#c19303'
-        img.setAttribute('src', 'imagens/bebe-f.png')
+        img.src = 'imagens/luf.png'
 
 
     } else {
-        casa.innerHTML = `Parabéns você foi selecionado para a casa <mark id="son">Sonserina!${res}</mark>`
+        casa.innerHTML = `Parabéns você foi selecionado para a casa <mark id="son">Sonserina!</mark>`
         document.body.style.background = '#0b362f'
-        img.setAttribute('src', 'imagens/bebe-f.png')
+        img.src = 'imagens/son.png'
 
 
     }

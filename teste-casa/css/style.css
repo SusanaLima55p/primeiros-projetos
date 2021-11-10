@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-}
+
 :root{
     --font-padrao:'Clicker Script', cursive;
 }
@@ -15,16 +12,18 @@ body{
 main{
     background-color: white;
     border-radius: 10px;
-    min-width: 320;
-    max-width: 500px;
+    min-width: 200px;
+    max-width: 800px;
     margin: auto;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
+    box-shadow: 3px 3px 10px #0000005d;
 }
 
 main h1{
-    font: normal 4em 'Clicker Script', cursive;
+    font: normal 4em 'Clicker Script', 'cursive';
     text-align: center;
-    padding: 20px 0px;
+    padding: 25px 12px 0px 5px;
+    margin: 0px;
 
 }
 
@@ -33,15 +32,17 @@ main p{
     line-height: 30px;
     font-size: 1.3em;
     text-align: justify;
-    padding: 0px 20px;
-    padding-bottom: 10px;
+    padding: 0px 15px;
+    
+    
 }
 
 main button{
     display: block;
     margin: 25px auto;
     text-align: center;
-    padding: 25px;
+    padding: 15px;
+    border-radius: 15px;
     font-size: 1.2em;
 }
 
@@ -80,4 +81,16 @@ mark#luf{
 
 mark#son{
     background-color: rgba(0, 128, 0, 0.446);
+}
+
+img{
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+@media (max-width: 360px){
+    img{
+        width: 40%;
+    }
 }
