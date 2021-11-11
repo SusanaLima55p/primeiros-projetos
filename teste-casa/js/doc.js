@@ -1,6 +1,11 @@
 var botao = document.getElementById('bu')
 botao.addEventListener('click', inicio)
 var res = 0
+var gri = 0
+var cor = 0
+var luf = 0
+var son = 0
+
 var int = document.getElementById('int')
 
 //passagem de pergunta
@@ -10,7 +15,6 @@ function inicio(){
     var per1 = document.getElementById('per1')
     per1.style.display = 'block'
     var bper1 = document.getElementsByName('bper1')
-    
     
     
 
@@ -65,64 +69,64 @@ ver.addEventListener('click', verificar)
 
     //contagem de ponto
     if (bper1[0].checked){
-        res += 1
+        gri += 1
     } if (bper1[1].checked){
-        res += 2
+        cor += 1
     } if (bper1[2].checked){        
-        res += 3
+        luf += 1
     } if (bper1[3].checked){
-        res += 4
+        son += 1
     }
 
 
     if (bper2[0].checked){
-        res += 1
+        luf += 1
     } else if (bper2[1].checked){
-        res += 2
+        cor += 1
     } else if (bper2[2].checked){        
-        res += 4
+        son += 1
     } else if (bper2[3].checked){
-        res += 3
+        gri += 1
     }
 
     if (bper3[0].checked){
-        res += 2
+        cor += 2
     } else if (bper3[1].checked){
-        res += 3
+        luf += 2
     } else if (bper3[2].checked){        
-        res += 4
+        son += 2
     } else if (bper3[3].checked){
-        res += 1
+        gri += 2
     }
 
     if (bper4[0].checked){
-        res += 1
+        luf += 1
     } else if (bper4[1].checked){
-        res += 3
+        gr1 += 1
     } else if (bper4[2].checked){        
-        res += 2
+        cor += 1
     } else if (bper4[3].checked){
-        res += 4
+        son += 1
     }
 
     if (bper5[0].checked){
-        res += 3
+        luf += 1
     } else if (bper5[1].checked){
-        res += 1
+        gri += 1
     } else if (bper5[2].checked){        
-        res += 2
+        cor += 1
     } else if (bper5[3].checked){
-        res += 4
+        son += 1
     }
 
     if (bper6[0].checked){
-        res += 3
+        gri += 1
     } else if (bper6[1].checked){
-        res += 1
+        cor += 1
     } else if (bper6[2].checked){        
-        res += 4
+        son += 1
     } else if (bper6[3].checked){
-        res += 2
+        luf += 1
     }
     
 function verificar(){
@@ -130,18 +134,18 @@ function verificar(){
     var casa = document.getElementById('casa')
     var img = document.getElementById('emb')
 
-    if (res >= 0  && res < 10){
+    if (gri > son + cor + luf){
         casa.innerHTML = `Parabéns você foi selecionado para a casa <mark id="gri">Grifinória!</mark>`
         document.body.style.background = '#770203'
         img.src = 'imagens/gri.png'
 
-    } else if (res >= 10  && res < 14){
+    } else if (cor > son + luf + gri){
         casa.innerHTML = `Parabéns você foi selecionado para a casa <mark id="cor">Corvinal!</mark>`
         document.body.style.background = '#052e50'
         img.src = 'imagens/cor.png'
 
 
-    } else if (res >=14  && res < 19){  
+    } else if (luf > son + luf + gri){  
         casa.innerHTML = `Parabéns você foi selecionado para a casa <mark id="luf">Lufa-Lufa!</mark>`
         document.body.style.background = '#c19303'
         img.src = 'imagens/luf.png'
