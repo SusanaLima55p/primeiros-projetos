@@ -1,23 +1,21 @@
-var botao = document.getElementById('bu')
-botao.addEventListener('click', inicio)
-var res = 0
+
 var gri = 0
 var cor = 0
 var luf = 0
 var son = 0
 
 var int = document.getElementById('int')
+var botao = document.getElementById('bu')
+
+var per1 = document.getElementById('per1')
 
 //passagem de pergunta
 function inicio(){
     int.style.display = 'none'
     botao.style.display = 'none'
-    var per1 = document.getElementById('per1')
     per1.style.display = 'block'
-    var bper1 = document.getElementsByName('bper1')
-    
-    
 
+    var bper1 = document.getElementsByName('bper1')
 var prox = document.getElementById('prox')
 prox.addEventListener('click', proxima)
 
@@ -75,7 +73,7 @@ ver.addEventListener('click', verificar)
     } if (bper1[2].checked){        
         luf += 1
     } if (bper1[3].checked){
-        son += 1
+        son += 1    
     }
 
 
@@ -134,6 +132,8 @@ function verificar(){
     var casa = document.getElementById('casa')
     var img = document.getElementById('emb')
 
+    
+
     if (gri > son + cor + luf){
         casa.innerHTML = `Parabéns você foi selecionado para a casa <mark id="gri">Grifinória!</mark>`
         document.body.style.background = '#770203'
@@ -144,18 +144,15 @@ function verificar(){
         document.body.style.background = '#052e50'
         img.src = 'imagens/cor.png'
 
-
     } else if (luf > son + luf + gri){  
         casa.innerHTML = `Parabéns você foi selecionado para a casa <mark id="luf">Lufa-Lufa!</mark>`
         document.body.style.background = '#c19303'
         img.src = 'imagens/luf.png'
 
-
-    } else {
+    } else if(son > luf + gri + luf){
         casa.innerHTML = `Parabéns você foi selecionado para a casa <mark id="son">Sonserina!</mark>`
         document.body.style.background = '#0b362f'
         img.src = 'imagens/son.png'
-
 
     }
 
