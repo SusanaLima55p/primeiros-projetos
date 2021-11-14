@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <img src="imagens/Very-Basic-Menu-icon m.png" alt="icone de menu" id="menu" onclick="menu()">
+        </nav>
+    </header>
+    
+    <main>
+        <section class="conte">
+            
+        
+            <div class="calculadora"><h2>Calculadora</h2>
+                <table>
+                    <thead>
+                        <th colspan="4"><input type="number" name="" id="visor"></th>
+                    </thead>
+                    <tr>
+                        <td><input type="button" value="1" onclick="um()"></td>
+                        <td><input type="button" value="2" onclick="dois()"></td>
+                        <td><input type="button" value="3" onclick="tres()"></td>
+                        <td><input type="button" value="4" onclick="quatro()"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="5" onclick="cinco()"></td>
+                        <td><input type="button" value="6" onclick="seis()"></td>
+                        <td><input type="button" value="7" onclick="sete()"></td>
+                        <td><input type="button" value="8" onclick="oito()"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="9" onclick="nove()"></td>
+                        <td><input type="button" value="0" onclick="zero()"></td>
+                        <td><input type="button" value="+" class="sin"  onclick="mais()"></td>
+                        <td><input type="button" value="-" class="sinm"  onclick="menos()"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="x" class="sin"  onclick="mult()"></td>
+                        <td><input type="button" value="/" class="sin"  onclick="divi()"></td>
+                        <td><input type="button" value="C" id="del" onclick="del()"></td>
+                        <td><input type="button" value="=" class="ig"  onclick="igual()"></td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <img src="imagens/menino-p.jpg" alt="ilustração menino com números" class="menino">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href='https://br.freepik.com/vetores/escola'>Escola vetor criado por brgfx - br.freepik.com</a>
+    </footer>
+    <script src="js/doc.js"></script>
+</body>
+</html>

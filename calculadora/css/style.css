@@ -1,0 +1,104 @@
+@font-face{
+    font-family: escola;
+    src: url(../kindergarten.ttf);
+}
+:root{
+    --cor1: #01426B;
+    --cor2: #82C3EC;
+    --cor3: #596369;
+    --cor4: #9AABB5;
+    --cor5: #C5DBE8;
+    --font-ti: 'escola';
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(../imagens/pattern004.png);
+    margin: 0px 8px;
+}
+header{
+    background-color: var(--cor2);
+    box-shadow: inset 0px 4px 20px rgba(0, 0, 0, 0.248);
+    margin:auto -8px 30px;
+}
+img#menu{
+    display: flex;
+    margin: auto;
+    margin-bottom: 0px;
+    margin-left: 10px;
+}
+h2{
+    font: normal 2.6em sans-serif;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.conte{
+    width: 100%;  
+    min-height: 450px;
+    background-color: #ffff;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+}
+main{
+    max-width: 800px;
+    min-width: 300px;
+    margin: auto;
+    margin-bottom: 220px;
+}
+input{
+    font: 30px var(--font-ti);
+    color: rgb(16, 38, 167);
+    width: 80px;
+    height: 40px;
+    margin: auto;
+    border-color: rgba(0, 0, 0, 0.426);
+}
+input#visor{
+    margin: auto;
+    width: 99.2%;
+    border: none;
+}
+
+th{
+    width: 326px;
+    border: 2px solid rgba(0, 0, 0, 0.426); 
+}
+.menino{
+    margin: auto 45%;
+}
+table{
+    margin: auto 25%;
+}
+
+
+footer{
+    background-color: var(--cor2);
+    padding: 10px;
+    margin: auto -8px;
+    box-shadow: inset 0px 4px 20px rgba(0, 0, 0, 0.248);
+}
+@media (max-width: 740px){
+    .conte{
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+
+table{
+    display: block;
+    width: 80%;
+    margin: auto 20%;
+    padding-bottom: 20px;
+}
+input#visor{
+    display: block;
+    margin: auto;
+    width: 99.2%
+}
+img{
+    display: flex;
+}
+}
