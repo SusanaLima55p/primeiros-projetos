@@ -35,18 +35,18 @@ h2{
     padding-bottom: 20px;
 }
 .conte{
-    width: 100%;  
-    min-height: 450px;
+    max-width: 800px;
+    min-width: 300px;
     background-color: #ffff;
     display: flex;
     align-items: center;
     border-radius: 30px;
+    margin-bottom: 330px;
 }
 main{
     max-width: 800px;
     min-width: 300px;
     margin: auto;
-    margin-bottom: 220px;
 }
 input{
     font: 30px var(--font-ti);
@@ -57,27 +57,31 @@ input{
     border-color: rgba(0, 0, 0, 0.426);
 }
 input#visor{
-    margin: auto;
-    width: 99.2%;
+    width: 0.5px;
+    height: 0.5px;
     border: none;
 }
 
 th{
     width: 326px;
+    height: 40px;
     border: 2px solid rgba(0, 0, 0, 0.426); 
 }
 .menino{
-    margin: auto 45%;
+    margin: auto;
 }
 table{
-    margin: auto 25%;
+    font: normal 1.8em   var(--font-ti);
+    color: green;
+    margin:auto;
+   padding-left:  20%;
 }
 
 
 footer{
     background-color: var(--cor2);
     padding: 10px;
-    margin: auto -8px;
+    margin: auto -8px 0px -8px;
     box-shadow: inset 0px 4px 20px rgba(0, 0, 0, 0.248);
 }
 @media (max-width: 740px){
@@ -85,20 +89,27 @@ footer{
         display: block;
         width: 90%;
         margin: auto;
+        margin-bottom: 40px;
     }
 
-table{
-    display: block;
-    width: 80%;
-    margin: auto 20%;
-    padding-bottom: 20px;
-}
-input#visor{
-    display: block;
-    margin: auto;
-    width: 99.2%
-}
-img{
-    display: flex;
-}
+    table{
+        display: block;
+        width: 330px;
+        margin: auto;
+        padding:0px;
+    }
+    input#visor{
+        margin: auto;
+        width: 0.5px;
+        height: 0.5%;
+    }
+    img{
+        display: block;
+        margin: auto;
+        padding: 0px;
+    }
+    .menino{
+        margin: auto;
+        padding: 0px;
+    }
 }
