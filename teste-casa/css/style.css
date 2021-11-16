@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
-
+@font-face{
+    font-family: harry potter;
+    src: url(/teste-casa/fonte/HARRYP__.TTF);
+}
 
 :root{
-    --font-padrao:'Clicker Script', cursive;
+    --font-padrao: 'harry potter', 'cursive';
 }
 
 body{
-    background-color: #e49e7b;
+    background-image: url(/teste-casa/imagens/pexels-irina-iriser-1831408.png);
 }
 
 main{
@@ -20,11 +23,10 @@ main{
 }
 
 main h1{
-    font: normal 4em 'Clicker Script', 'cursive';
+    font: normal 4em var(--font-padrao);
     text-align: center;
     padding: 25px 12px 0px 5px;
     margin: 0px;
-
 }
 
 main p{
@@ -33,8 +35,6 @@ main p{
     font-size: 1.3em;
     text-align: justify;
     padding: 0px 15px;
-    
-    
 }
 
 main button{
@@ -64,19 +64,20 @@ main div{
     padding: 10px 10px ;
 }
  main h2#casa{
-     text-align: center;
- }
+    text-align: center;
+}
 
- mark#gri{
-     background-color: rgba(255, 0, 0, 0.446);
- }
+mark#gri{
+    background-color: rgba(255, 0, 0, 0.446);
+}
 
- mark#cor{
+mark#cor{
     background-color: rgba(0, 102, 255, 0.446);
 }
 
 mark#luf{
     background-color: rgba(255, 255, 0, 0.446);
+    color: rgb(206, 169, 21);
 }
 
 mark#son{
@@ -89,8 +90,21 @@ img{
     width: 50%;
 }
 
-@media (max-width: 360px){
+article{
+    font-size: 1.6em;
+    line-height: 15px;
+}
+@media (max-width: 1191px){
+    body{
+        background-image: url(/teste-casa/imagens/pexels-irina-iriser-1200.png);
+    }
+}
+@media (max-width: 400px){
     img{
         width: 40%;
     }
+    body{
+        background-image: url(/teste-casa/imagens/pexels-irina-iriser-400.png);
+    }
+    
 }

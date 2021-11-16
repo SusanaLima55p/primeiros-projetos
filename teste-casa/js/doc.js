@@ -14,6 +14,9 @@ var bper5 = document.getElementsByName('bper5')
 var per6 = document.getElementById('per6')
 var bper6 = document.getElementsByName('bper6')
 
+
+
+
 //passagem de pergunta
 function inicio(){
     int.style.display = 'none'
@@ -43,9 +46,6 @@ function proxima(){
     alert('Selecione uma opção!')
     }
 }
-    
-    
-
 // terceira pergunta 
 function proxima2(){
     if (bper2[0].checked){
@@ -135,9 +135,6 @@ function proxima5(){
     }
 }
 //verificação
-    
-var casa = document.getElementById('casa')
-var img = document.getElementById('emb')
 function verificar(){
     if (bper6[0].checked){
         soma[0] ++
@@ -153,30 +150,33 @@ function verificar(){
         resultado()
     } else{
         alert('Selecione uma opção!')
-    } 
+    }    
 }
-
-
+var para = document.createElement('p')
+document.getElementById('casas').appendChild(para)
+var img = document.createElement('img')
+document.getElementById('casas').appendChild(img)
+//reultado
 function resultado(){
     per6.style.display = 'none'
     //grifinoria
     if (soma[0] > soma[3] + soma[2] + soma[1]){
-        casa.innerHTML = `Parabéns você foi selecionado para a casa <mark id="gri">Grifinória!</mark>`
-        document.body.style.background = '#770203'
+        para.innerHTML = `Parabéns você foi selecionado para a casa <mark id="gri">Grifinória!</mark>`
         img.src = 'imagens/gri.png'
+        document.body.style.background = '#770203'
     //corvinal
     } else if (soma[1] > soma[3] + soma[2] + soma[0]){
-        casa.innerHTML = `Parabéns você foi selecionado para a casa <mark id="cor">Corvinal!</mark>`
+        para.innerHTML = `Parabéns você foi selecionado para a casa <mark id="cor">Corvinal!</mark>`
         document.body.style.background = '#052e50'
         img.src = 'imagens/cor.png'
     //lufa=lufa
     } else if (soma[2] > soma[3] + soma[1] + soma[0]){  
-        casa.innerHTML = `Parabéns você foi selecionado para a casa <mark id="luf">Lufa-Lufa!</mark>`
+        para.innerHTML = `Parabéns você foi selecionado para a casa <mark id="luf">Lufa-Lufa!</mark>`
         document.body.style.background = '#c19303'
         img.src = 'imagens/luf.png'
     //sonserina
     } else if(soma[3] > soma[2] + soma[1] + soma[0]){
-        casa.innerHTML = `Parabéns você foi selecionado para a casa <mark id="son">Sonserina!</mark>`
+        para.innerHTML = `Parabéns você foi selecionado para a casa <mark id="son">Sonserina!</mark>`
         document.body.style.background = '#0b362f'
         img.src = 'imagens/son.png'
     }
