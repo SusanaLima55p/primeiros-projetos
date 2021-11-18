@@ -1,6 +1,6 @@
 @font-face{
     font-family: escola;
-    src: url(../kindergarten.ttf);
+    src: url(/calculadora/fonte/kindergarten.ttf);
 }
 :root{
     --cor1: #01426B;
@@ -16,12 +16,12 @@
 }
 body{
     background-image: url(../imagens/pattern004.png);
-    margin: 0px 8px;
+    margin: 0px 10px;
 }
 header{
     background-color: var(--cor2);
     box-shadow: inset 0px 4px 20px rgba(0, 0, 0, 0.248);
-    margin:auto -8px 30px;
+    margin:auto -10px 30px;
 }
 img#menu{
     display: flex;
@@ -32,7 +32,7 @@ img#menu{
 h2{
     font: normal 2.6em sans-serif;
     text-align: center;
-    padding-bottom: 20px;
+    padding: 20px 0px;
 }
 .conte{
     max-width: 800px;
@@ -41,15 +41,11 @@ h2{
     display: flex;
     align-items: center;
     border-radius: 30px;
-    margin-bottom: 330px;
-}
-main{
-    max-width: 800px;
-    min-width: 300px;
     margin: auto;
+    margin-bottom: 45%;
 }
 input{
-    font: 30px var(--font-ti);
+    font: normal 1em var(--font-ti);
     color: rgb(16, 38, 167);
     width: 80px;
     height: 40px;
@@ -57,9 +53,7 @@ input{
     border-color: rgba(0, 0, 0, 0.426);
 }
 input#visor{
-    width: 0.5px;
-    height: 0.5px;
-    border: none;
+    display: none;
 }
 
 th{
@@ -71,45 +65,123 @@ th{
     margin: auto;
 }
 table{
-    font: normal 1.8em   var(--font-ti);
+    font: normal 1.8em var(--font-ti);
     color: green;
     margin:auto;
-   padding-left:  20%;
+    padding-left:  20%;
 }
-
 
 footer{
     background-color: var(--cor2);
     padding: 10px;
-    margin: auto -8px 0px -8px;
+    margin: auto -10px 0px -10px;
     box-shadow: inset 0px 4px 20px rgba(0, 0, 0, 0.248);
 }
-@media (max-width: 740px){
+@media (max-width: 670px){
+    body{
+        margin: 0px 8px;
+    }
+
+    header{
+        margin: auto -8px 30px -8px;
+    }
+
     .conte{
         display: block;
-        width: 90%;
+        max-width: 100%;
+        min-width: 330px;
         margin: auto;
-        margin-bottom: 40px;
+        margin-bottom: 5%;
+    }
+
+    .menino{
+        margin: auto;
+        padding: 0px;
     }
 
     table{
         display: block;
-        width: 330px;
+        max-width: 330px;
         margin: auto;
         padding:0px;
     }
-    input#visor{
-        margin: auto;
-        width: 0.5px;
-        height: 0.5%;
-    }
+
     img{
         display: block;
         margin: auto;
         padding: 0px;
     }
+
+    footer{
+        margin: 0px -8px;
+    }
+    
+}
+
+@media(max-width:370px){
+    
+    .conte{
+        display: block;
+        max-width: 370px;
+        min-width: 250px;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+    body{
+        margin: 0px 3px;
+    }
+
+    table{
+        display: block;
+        max-width: 370px;
+        min-width: 250px;
+        margin: auto;
+        padding:0px;
+    }
+    
+    thead{
+        max-width: 370px;
+        min-width: 250px;
+    }
+
+    tr{
+        width: auto;
+    }
+    td{
+        width: auto;
+        padding: auto;
+    }
+
+    input#visor{
+        display: none;
+    }
+
+    img{
+        display: block;
+        margin: auto;
+        padding: 0px;
+    }
+
     .menino{
         margin: auto;
         padding: 0px;
     }
+
+    footer{
+        margin-top: 13%;
+        margin: 0px -3px;
+    }
+
+
+    header{
+        margin:auto -3px 30px;
+
+    
+    }
+    input{
+        width: 72px;
+    }
+        
 }
+
