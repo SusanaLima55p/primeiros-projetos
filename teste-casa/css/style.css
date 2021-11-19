@@ -9,7 +9,9 @@
 }
 
 body{
-    background-image: url(/teste-casa/imagens/pexels-irina-iriser-1831408.png);
+    background-image: url(/teste-casa/imagens/castelo-gg.jpg);
+    background-size: 100%vh;
+   
 }
 
 main{
@@ -37,7 +39,7 @@ main p{
     padding: 0px 15px;
 }
 
-main button{
+main button.botao{
     display: block;
     margin: 25px auto;
     text-align: center;
@@ -94,17 +96,28 @@ article{
     font-size: 1.6em;
     line-height: 15px;
 }
-@media (max-width: 1191px){
+
+@media(max-width: 1920px){
     body{
-        background-image: url(/teste-casa/imagens/pexels-irina-iriser-1200.png);
+        background-image: url(/teste-casa/imagens/castelo-m.jpg);
     }
 }
-@media (max-width: 400px){
+
+@media (max-width: 1440px){
+    body{
+        background-image: url(/teste-casa/imagens/castelo-g.jpg);
+        background-size: 100%hv;
+        height: 100%;
+    }
+}
+@media (max-width: 375px){
     img{
         width: 40%;
     }
     body{
-        background-image: url(/teste-casa/imagens/pexels-irina-iriser-400.png);
+        background-image: url(/teste-casa/imagens/castelo-p.jpg);
+        background-size: 100%hv;
+        height: 100%;
     }
     
 }
