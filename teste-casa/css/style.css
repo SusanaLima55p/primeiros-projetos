@@ -8,7 +8,7 @@
 }
 
 body{
-    background-image: url('process.env.PUBLIC_URL/teste-casa/imagens/castelo-gg.jpg');
+    background-image: url('/teste-casa/imagens/castelo-gg.jpg');
     background-size: 100%vh;
     height: 100%vh;
    
