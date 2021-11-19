@@ -1,6 +1,6 @@
 @font-face{
     font-family: harry potter;
-    src: url(/teste-casa/fonte/HARRYP__.TTF);
+    src: url(../fonte/HARRYP__.TTF);
 }
 
 :root{
