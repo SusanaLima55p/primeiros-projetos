@@ -1,6 +1,6 @@
 @font-face{
     font-family: escola;
-    src: url(/calculadora/fonte/kindergarten.ttf);
+    src: url(../fonte/kindergarten.ttf);
 }
 :root{
     --cor1: #01426B;
