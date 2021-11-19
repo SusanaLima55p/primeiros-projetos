@@ -9,7 +9,7 @@
 }
 
 body{
-    background-image: url(/teste-casa/imagens/castelo-gg.jpg);
+    background-image: url(/teste-casa/imagens/castelo-gg.png);
     background-size: 100%vh;
     height: 100%vh;
    
@@ -26,7 +26,8 @@ main{
 }
 
 main h1{
-    font: normal 4em var(--font-padrao);
+    font-family: var(--font-padrao), Arial, Helvetica, sans-serif;
+    font-size: 4em;
     text-align: center;
     padding: 25px 12px 0px 5px;
     margin: 0px;
@@ -100,20 +101,20 @@ article{
 
 @media(max-width: 1920px){
     body{
-        background-image: url(/teste-casa/imagens/castelo-m.jpg);
+        background-image: url(/teste-casa/imagens/castelo-m.png);
     }
 }
 
 @media (max-width: 1440px){
     body{
-        background-image: url(/teste-casa/imagens/castelo-g.jpg);
+        background-image: url(/teste-casa/imagens/castelo-g.png);
         background-size: 100%hv;
         height: 100%;
     }
 }
 @media (max-width: 375px){
     body{
-        background-image: url(/teste-casa/imagens/castelo-p.jpg);
+        background-image: url(/teste-casa/imagens/castelo-p.png);
         background-size: 100%hv;
         height: 100%;
     }
