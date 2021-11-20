@@ -1,9 +1,9 @@
 # primeiros-projetos
 
-# calculadora
+# /calculadora/
 
-# estacao
+# /estacao/
 
-# harry-potter
+# /harry-potter/
 
-# teste-casa
+# /teste-casa/
