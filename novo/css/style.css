@@ -42,8 +42,21 @@ nav{
     padding: 10px 0px;
     margin-top: -145px;
 }
-
+button{
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    height: 20px;
+    padding-right: 50px;
+}
 a{
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+    font-size: 23px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+a.link{
     text-decoration: none;
     color: black;
     font-weight: normal;
@@ -51,7 +64,7 @@ a{
     font-size: 20px;
     height: 20px;
 }
-a:hover{
+a.link:hover{
     color: white;
     font-size: 23px;
     transition: 0.3s;
@@ -83,11 +96,6 @@ h2{
     padding: 0px;
     padding-left: 5px;
 }
-
-h3{
-    padding-top: 5px;
-}
-
 
 article{
     max-width: 800px;

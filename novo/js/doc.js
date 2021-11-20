@@ -1,9 +1,9 @@
 let men = document.getElementById('menu')
 let prin = document.getElementById('prin')
-
+let pes = document.getElementById('pes')
 let link = document.getElementById('link')
 let cli = ''
-
+let op = ''
 function menu(){
     if(cli == 'ativo'){
         men.style.display = 'none'
@@ -20,10 +20,16 @@ function menu(){
 }
 
 function mostrar(){
-    link.style.display = 'block'
-    
+    if(op == 'opções'){
+        op = ''
+        link.style.display = 'none'
+    } else{
+        op = 'opções'
+        link.style.display = 'block'
+    }
 }
 
-function pesquisar(event){
-    console.log(event.key.charCodeAt())
-}
+pes.addEventListener('keypress', 
+function buscar(event){
+    console.log(event.key.charCodeAt()) 
+})
