@@ -4,7 +4,12 @@
         Estarei desenvolvendo também a organização, otimização e legibilidade do meu código. Projetos visando a responsividade adaptando-se a vários tamanhos de telas.
 ---
 ## Site com tema Harry Potter
+
+&nbsp;
+
         Meu primeiro site desenvolvido totalmente do zero com um layout simples utilizando conceitos básicos de HTML5 e CSS3. Exercitei  no documento a inserção de imagens, vídeos, fontes e a manipulação dos mesmos. 
+&nbsp;
+
 - [Harry Potter](https://susanalima55p.github.io/primeiros-projetos/harry-potter/)
 
 &nbsp;
