@@ -22,11 +22,11 @@
 ## Site calculadora com design escolar
 
         Calculadora básica com botões para os valores de 0 até 9 e sinais de mais, menos, multiplicação, divisão e igual. Um visor onde somente acrescentar valores através dos  botões.
-        A execução funciona sem restição de casas decimais. 
+A execução funciona sem restição de casas decimais. 
 - [Calculadora](https://susanalima55p.github.io/primeiros-projetos/calculadora/)
 &nbsp;
 ---
 ## Estações
-        Projeto em adamento, incremento de menu e imagens com interatividade. Explorando novos layouts com buscas na página.
+Projeto em adamento, incremento de menu e imagens com interatividade. Explorando novos layouts com buscas na página.
 - [Estações](https://susanalima55p.github.io/primeiros-projetos/estacao/)
 
