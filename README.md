@@ -27,6 +27,6 @@ A execução funciona sem restição de casas decimais.
 &nbsp;
 
 ## Estações
-        Projeto em adamento, incremento de menu e imagens com interatividade. Explorando novos layouts com buscas na página.
+Projeto em adamento, incremento de menu e imagens com interatividade. Explorando novos layouts com buscas na página.
 - [Estações](https://susanalima55p.github.io/primeiros-projetos/estacao/)
 
