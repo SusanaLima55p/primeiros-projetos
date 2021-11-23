@@ -1,12 +1,14 @@
 # Primeiros Projetos de Site
 
+&nbsp;
         Neste repositório estarei criando alguns projetos de sites de iniciativa pessoal, onde aplicarei meus conhecimentos de HTML5, CSS3 e JavaScript. 
         Estarei desenvolvendo também a organização, otimização e legibilidade do meu código. Projetos visando a responsividade adaptando-se a vários tamanhos de telas.
+&nbsp;
+
 ---
 ## Site com tema Harry Potter
 
 &nbsp;
-
         Meu primeiro site desenvolvido totalmente do zero com um layout simples utilizando conceitos básicos de HTML5 e CSS3. Exercitei  no documento a inserção de imagens, vídeos, fontes e a manipulação dos mesmos. 
 &nbsp;
 
@@ -46,6 +48,7 @@
 
 - [Calculadora](https://susanalima55p.github.io/primeiros-projetos/calculadora/)
 &nbsp;
+---
 
 ## Estações
 &nbsp;
