@@ -11,13 +11,15 @@
 
 ---
 ## Teste de qual casa de Hogwarts você é 
+
 &nbsp;
         Site com interatividade gerada por JavaScript. Tela inicial com um botão para começar o teste, que dá sequencia para a primeira pergunta. Perguntas com opções marcáveis por unput radio, meio de indentificação de qual casa a resposta do usuário corresponde.
 &nbsp;
-&nbsp;
 
+&nbsp;
         Com alert caso o usuário não marque nenhuma das opções e queira passar para a próxima, impedindo que avance á pergunta seguinte.
 &nbsp;
+
 &nbsp;
         Deste modo ao fim das perguntas será verificado a qual casa suas respostas mais corresponderam. Será exibido o nome da casa com mais compatibilidade, modificando a cor do background para a da casa e o brasão. Tudo de forma dinâmica utilizando eventos, funções e condições.
 &nbsp;
@@ -28,12 +30,15 @@
 
 ---
 ## Site calculadora com design escolar
-&nbsp;
 
+&nbsp;
         Calculadora básica com botões para os valores de 0 até 9 e sinais de mais, menos, multiplicação, divisão e igual. Um visor onde somente acrescentar valores através dos  botões.
 &nbsp;
 
+&nbsp;
         A execução funciona sem restição de casas decimais. 
+&nbsp;
+
 - [Calculadora](https://susanalima55p.github.io/primeiros-projetos/calculadora/)
 &nbsp;
 
