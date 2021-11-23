@@ -11,18 +11,26 @@
 
 ---
 ## Teste de qual casa de Hogwarts você é 
+&nbsp;
+
         Site com interatividade gerada por JavaScript. Tela inicial com um botão para começar o teste, que dá sequencia para a primeira pergunta. Perguntas com opções marcáveis por unput radio, meio de indentificação de qual casa a resposta do usuário corresponde.
+&nbsp;
         Com alert caso o usuário não marque nenhuma das opções e queira passar para a próxima, impedindo que avance á pergunta seguinte.
-        Deste modo ao fim das perguntas será verificado a qual casa suas respostas mais corresponderam. Será exibido o nome da casa com mais compatibilidade,modificando a cor do background para a da casa e o brasão. Tudo de forma dinâmica utilizando eventos, funções e condições.
+
+&nbsp;
+        Deste modo ao fim das perguntas será verificado a qual casa suas respostas mais corresponderam. Será exibido o nome da casa com mais compatibilidade, modificando a cor do background para a da casa e o brasão. Tudo de forma dinâmica utilizando eventos, funções e condições.
 - [Chapéu Seletor](https://susanalima55p.github.io/primeiros-projetos/teste-casa/)
 
 &nbsp;
 
 ---
 ## Site calculadora com design escolar
+&nbsp;
 
         Calculadora básica com botões para os valores de 0 até 9 e sinais de mais, menos, multiplicação, divisão e igual. Um visor onde somente acrescentar valores através dos  botões.
-A execução funciona sem restição de casas decimais. 
+&nbsp;
+
+        A execução funciona sem restição de casas decimais. 
 - [Calculadora](https://susanalima55p.github.io/primeiros-projetos/calculadora/)
 &nbsp;
 
