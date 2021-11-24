@@ -6,20 +6,28 @@
 :root{
     --font-padrao: 'harry potter', 'cursive';
 }
+*{
+    margin: 0;
+    padding: 0;
+}
 
 body{
-    background-image: url(../imagens/castelo-gg.jpg);
-    background-size: 100%vh;
-    height: 100%vh;
-   
+    background-size: cover;
+    height: 100%;
+    background-color: rosybrown;
+    background-image: url(../imagens/castelo-g.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    margin: 0px 10px;
 }
 
 main{
+    margin: 30px auto 0px auto;
     background-color: white;
     border-radius: 10px;
     min-width: 200px;
     max-width: 800px;
-    margin: auto;
     padding-bottom: 15px;
     box-shadow: 3px 3px 10px #0000005d;
 }
@@ -47,6 +55,7 @@ main button.botao{
     padding: 15px;
     border-radius: 15px;
     font-size: 1.2em;
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.186);
 }
 
 section{
@@ -98,27 +107,9 @@ article{
     line-height: 15px;
 }
 
-@media(max-width: 1920px){
-    body{
-        background-image: url(../imagens/castelo-m.jpg);
-    }
-}
 
-@media (max-width: 1440px){
-    body{
-        background-image: url(../imagens/castelo-g.jpg);
-        background-size: 100%hv;
-        height: 100%;
-    }
-}
-@media (max-width: 375px){
+@media (max-width: 675px){
     body{
         background-image: url(../imagens/castelo-p.jpg);
-        background-size: 100%hv;
-        height: 100%;
-    }
-    
-    img{
-        width: 40%;
     }
 }

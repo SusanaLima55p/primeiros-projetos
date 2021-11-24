@@ -18,7 +18,6 @@ function menu(){
     } else {
         cli = 'ativo'
         men.style.display = 'grid'
-        men.style.margin ='-30px 0px 0px 0px'
         prin.style.margin = '0px 0px 30px 0px'
         barrame.style.margin = '-86px 0px 0px 0px'
         link.style.margin ='-140px 0px 0px 0px'

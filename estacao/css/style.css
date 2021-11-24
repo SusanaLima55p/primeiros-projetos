@@ -41,6 +41,7 @@ menu{
     height: 300px;
     border-bottom-right-radius: 10px;
     box-shadow: 8px 0px 20px rgba(0, 0, 0, 0.385);
+    
 }
 nav{
     display: none;
